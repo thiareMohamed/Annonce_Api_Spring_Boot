@@ -22,8 +22,8 @@ public class AnnonceService {
     public Optional<Annonce> getAllById(int id){
         return annonceRepository.findById(id);
     }
-    public List<Annonce> create(Annonce annonce){
-        return (List<Annonce>) annonceRepository.save(annonce);
+    public Annonce create(Annonce annonce){
+        return (Annonce) annonceRepository.save(annonce);
     }
     public void delete(int id) {
         annonceRepository.deleteById(id);
