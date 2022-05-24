@@ -35,5 +35,4 @@ public class AnnonceController {
         annonceService.delete(id);
     }
 
-
 }
